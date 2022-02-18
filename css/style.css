@@ -76,15 +76,9 @@ nav a{
 }
 /* Requirement 2 code here*/
 nav a:hover{
-  text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration: underline wavy;
 }
 
-.skip{
-  position: absolute;
-  left: 0;
-  top: -100px;
-}
 
 a.skip{
   background: white;
@@ -92,19 +86,19 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: left 1s ease-out;
   z-index: 1;
+  position: absolute;
+  left: -200px;
   /* Requirement 3 code here*/
   
 }
 
-.nav a:focus{
-  border-width: 2px 0px 0px 0px; 
-  border-style: solid;
-  border-color: yellow;
+a:focus{
+  border: none; 
+  border-top: 2px solid yellow;
+  outline: none;
 }
 
-a:focus{
-  border: 2px solid;
-}
+
 
 
 /* Requirement 4 code here*/
@@ -147,7 +141,7 @@ a:focus{
 
   .text{
     align-self: center;
-    max-height: 25vh;
+    max-height: 25vw;
     overflow: scroll;
   }
 
@@ -185,7 +179,7 @@ a:focus{
     margin-right:0;
   }
 
-  .skip:focus{
+  a.skip:focus{
     text-align:left;
     position:absolute;
     top: 20px;
@@ -199,12 +193,12 @@ a:focus{
   }
 
   .about, .method, .clients-image, .contact-image{
-    grid-column: 3 / span 5;
-    justify-content: center;
+    grid-column: 3 / span 2;
+    
   }
   .clients, .contact, .about-image, .method-image{
-    grid-column: 2 / span 4;
-    justify-content: center;
+    grid-column: 2 / span 2;
+    
   }
   /* Requirements 12-15 here: */
 

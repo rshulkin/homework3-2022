@@ -105,6 +105,8 @@ a.skip{
 :focus{
   border: 2px solid;
 }
+
+
 /* Requirement 4 code here*/
 
   .container{
@@ -133,10 +135,6 @@ a.skip{
     overflow: hidden;
 
   }  
-  .about, .clients, .method, .contact:focus{
-    overflow:hidden;
-    
-  }
   
   img{
     width: 100%

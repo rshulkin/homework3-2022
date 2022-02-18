@@ -96,13 +96,13 @@ a.skip{
   
 }
 
-.skip a:focus{
+.nav a:focus{
   border-width: 2px 0px 0px 0px; 
   border-style: solid;
   border-color: yellow;
 }
 
-:focus{
+a:focus{
   border: 2px solid;
 }
 
@@ -186,7 +186,11 @@ a.skip{
   }
 
   .skip:focus{
+    text-align:left;
+    position:absolute;
     top: 20px;
+    left: 0px;
+
   }
   .container{
     display: grid;
